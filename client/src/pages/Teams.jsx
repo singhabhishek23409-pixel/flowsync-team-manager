@@ -20,7 +20,7 @@ import io from "socket.io-client";
 
 // SOCKET
 const socket =
-  io("http://localhost:5000");
+  io("https://daring-youth-production-230b.up.railway.app");
 
 
 export default function Teams() {
@@ -57,7 +57,7 @@ export default function Teams() {
 
       const res =
         await axios.get(
-          "http://localhost:5000/teams",
+          "https://daring-youth-production-230b.up.railway.app/teams",
           {
 
             headers: {
@@ -93,7 +93,7 @@ export default function Teams() {
 
       const res =
         await axios.get(
-          "http://localhost:5000/tasks"
+          "https://daring-youth-production-230b.up.railway.app/tasks"
         );
 
       setTasks(res.data);
@@ -159,7 +159,7 @@ export default function Teams() {
     try {
 
       await axios.post(
-        "http://localhost:5000/teams",
+        "https://daring-youth-production-230b.up.railway.app/teams",
         {
           name,
           description,
@@ -189,7 +189,7 @@ export default function Teams() {
 
       const usersResponse =
         await axios.get(
-          "http://localhost:5000/users"
+          "https://daring-youth-production-230b.up.railway.app/users"
         );
 
       const selectedUser =
@@ -217,7 +217,7 @@ export default function Teams() {
       }
 
       await axios.put(
-        `http://localhost:5000/teams/${teamId}/member`,
+        `https://daring-youth-production-230b.up.railway.app/teams/${teamId}/member`,
         {
 
           name:
@@ -255,7 +255,7 @@ export default function Teams() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/teams/${id}`
+        `https://daring-youth-production-230b.up.railway.app/teams/${id}`
       );
 
       fetchTeams();

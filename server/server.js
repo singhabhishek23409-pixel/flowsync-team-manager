@@ -30,7 +30,7 @@ const server = http.createServer(app);
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:8080",
-  "http://localhost:5000",
+  "https://daring-youth-production-230b.up.railway.app",
 ];
 
 

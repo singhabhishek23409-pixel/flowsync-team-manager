@@ -50,7 +50,7 @@ function Tasks() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/tasks"
+          "https://daring-youth-production-230b.up.railway.app/tasks"
         );
 
       setTasks(
@@ -73,7 +73,7 @@ function Tasks() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/tasks/${id}`
+        `https://daring-youth-production-230b.up.railway.app/tasks/${id}`
       );
 
       fetchTasks();
@@ -95,7 +95,7 @@ function Tasks() {
     try {
 
       await axios.put(
-        `http://localhost:5000/tasks/${id}`,
+        `https://daring-youth-production-230b.up.railway.app/tasks/${id}`,
         {
           status,
         }

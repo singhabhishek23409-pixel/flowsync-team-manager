@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/auth";
+const API = "https://daring-youth-production-230b.up.railway.app/api/auth";
 
 export const registerUser = async (userData) => {
 

@@ -43,7 +43,7 @@ function Dashboard() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/tasks"
+          "https://daring-youth-production-230b.up.railway.app/tasks"
         );
 
       setTasks(

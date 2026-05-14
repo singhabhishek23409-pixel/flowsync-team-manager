@@ -15,7 +15,7 @@ import DashboardLayout
 
 // SOCKET
 const socket =
-  io("http://localhost:5000");
+  io("https://daring-youth-production-230b.up.railway.app");
 
 
 function TeamChat() {

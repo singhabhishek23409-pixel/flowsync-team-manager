@@ -35,7 +35,7 @@ function CreateTaskModal({
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/teams"
+        "https://daring-youth-production-230b.up.railway.app/teams"
       );
 
       setTeams(
@@ -115,7 +115,7 @@ function CreateTaskModal({
       if (selectedTask) {
 
         const response = await axios.put(
-          `http://localhost:5000/tasks/${selectedTask._id}`,
+          `https://daring-youth-production-230b.up.railway.app/tasks/${selectedTask._id}`,
           taskData
         );
 
@@ -127,7 +127,7 @@ function CreateTaskModal({
       else {
 
         const response = await axios.post(
-          "http://localhost:5000/tasks",
+          "https://daring-youth-production-230b.up.railway.app/tasks",
           taskData
         );
 
