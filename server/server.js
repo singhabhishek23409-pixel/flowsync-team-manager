@@ -30,7 +30,9 @@ const server = http.createServer(app);
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:8080",
-  "https://daring-youth-production-230b.up.railway.app",
+
+  // LIVE FRONTEND
+  "https://flowsync-production-adb0.up.railway.app",
 ];
 
 
@@ -39,6 +41,7 @@ const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
